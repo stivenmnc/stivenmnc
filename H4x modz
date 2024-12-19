@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Completa con Publicidad Grande</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Cabecera */
+        header {
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe600;
+        }
+
+        .ad-header {
+            text-align: center;
+            padding: 50px 0;
+            background: #ececec;
+            margin: 30px 0;
+            font-size: 1.3em;
+        }
+
+        /* Hero */
+        .hero {
+            background: url('https://via.placeholder.com/1920x500') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Contenido Principal */
+        main {
+            padding: 40px 20px;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .section:nth-child(odd) {
+            background: #f4f4f4;
+        }
+
+        .section:nth-child(even) {
+            background: #fff;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        .section p {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .ad-inline {
+            text-align: center;
+            padding: 60px 0;
+            background: #ececec;
+            margin: 40px 0;
+            font-size: 1.3em;
+        }
+
+        /* Galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* FAQ */
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .faq p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        /* Formulario */
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+
+        /* Pie de Página */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        footer .ad-footer {
+            background: #ccc;
+            padding: 70px 0;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .section p {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Mi Sitio Amplio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Publicidad Principal -->
+    <div class="ad-header">
+        Publicidad Principal 970x250
+    </div>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>Bienvenido a Mi Sitio</h2>
+        <p>Un diseño amplio, completo y con grandes espacios para publicidad.</p>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section class="section">
+            <h2>Acerca de Nosotros</h2>
+            <p>Ofrecemos soluciones integrales diseñadas para satisfacer todas tus necesidades.</p>
+        </section>
+
+        <section class="section">
+            <h2>Nuestros Servicios</h2>
+            <p>Explora nuestras opciones para ayudarte a alcanzar tus metas.</p>
+        </section>
+
+        <section class="section">
+            <h2>Productos Destacados</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Producto 1">
+                <img src="https://via.placeholder.com/300" alt="Producto 2">
+                <img src="https://via.placeholder.com/300" alt="Producto 3">
+                <img src="https://via.placeholder.com/300" alt="Producto 4">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Testimonios</h2>
+            <p>Conoce lo que nuestros clientes opinan sobre nuestros servicios.</p>
+        </section>
+
+        <section class="section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq">
+                <h3>¿Qué servicios ofrecen?</h3>
+                <p>Ofrecemos soluciones personalizadas adaptadas a tus necesidades.</p>
+                <h3>¿Cómo puedo contactarlos?</h3>
+                <p>Puedes utilizar el formulario de contacto al final de esta página.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contáctanos</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo electrónico">
+                <textarea placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="ad-footer">
+            Publicidad Horizontal Completa
+        </div>
+        <p>&copy; 2024 Mi Sitio Amplio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
